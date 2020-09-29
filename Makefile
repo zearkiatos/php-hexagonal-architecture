@@ -8,7 +8,7 @@ deps: composer-install
 
 # 🐘 Composer
 composer-env-file:
-	@if [ ! -f .env.local ]; then echo '' > .env.local; fi
+	- .env.local
 
 .PHONY: composer-install
 composer-install: CMD=install
